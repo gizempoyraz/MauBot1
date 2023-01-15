@@ -1,4 +1,7 @@
 import nltk
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
@@ -27,10 +30,10 @@ def word_bag(sentence):
     # tokenize the pattern
     sentence_words = clean_up_sentence(sentence)
     # bag of words - matrix of N words, vocabulary matrix
-    bag = [0]*len(words)  
+    bag = [0]*len(words)
     for w in sentence_words:
         for i,word in enumerate(words):
-            if word == w: 
+            if word == w:
                 # assign 1 if current word is in the vocabulary position
                 bag[i] = 1
     return(np.array(bag))
@@ -42,7 +45,7 @@ def predict_class(sentence):
     ERROR_THRESHOLD = 0.25
     results = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
     # sort by strength of probability
-    
+
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
@@ -66,9 +69,9 @@ def getResponse(ints, intentsMauBot_json):
 #     return res
 
 while True:
-    message : input("")
+    message = input("message = ")
     ints = predict_class(message)
-    res = getResponse(ints,intents)
+    res = getResponse(ints, intents)
     print(res)
 
 
