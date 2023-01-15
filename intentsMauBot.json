@@ -1,0 +1,211 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day" ],
+      "responses": [ "Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time" ],
+      "responses": [ "See you!", "Have a nice day", "Bye! Come back again soon." ],
+      "context": [ "" ]
+    },
+    {
+      "tag":"NameQuery",
+      "patterns" :["What is your name?","What could I call you?","What can I call you?","What do your friends call you?","Who are you?","Tell me your name?"],
+      "responses" :["You can call me MauBot","Call me MauBot"],
+      "context" :[ "" ]
+  },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me" ],
+      "responses": [ "Happy to help!", "Any time!", "My pleasure" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": [ "Sorry, can't understand you", "Please give me more information", "Not sure I understand" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": [ "what is the academic calendar?", "academic calendar", "the academic calendar" ],
+      "responses": [ "Academic Calender: https://www.maltepe.edu.tr/tr/2022-–-2023-lisans-ve-onlisans-akademik-takvimi" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "headOfSoftware",
+      "patterns": [ "who is the head of software engineering department", "head of software engineering department" ],
+      "responses": [ "Doctoral Lecturer Huseyin AYGUN" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "headOfComputer",
+      "patterns": [ "who is the head of computer engineering department", "head of computer engineering department" ],
+      "responses": [ "Prof. Dr. Asaf VAROL " ],
+      "context": [ "" ]
+    },
+    {
+        "tag": "price",
+        "patterns": [
+          "What is the price of deparments?",
+          "How much money should I pay for studying in Maltepe University?",
+          "price policy details",
+          "Education payment of Software Engineering, Computer Engineering, Industrial Engineering, Medicine"
+        ],
+        "responses": [ "Price: https://www.maltepe.edu.tr/tr/ucretler" ],
+        "context": [ "" ]
+      },
+      {
+        "tag": "payment",
+        "patterns": [
+          "What is the payment policy of Maltepe Univercity?",
+          "What is the number of accounting department?",
+          "payment details",
+          "How can i pay the bill?"
+        ],
+        "responses": [ "Payment: https://pos2.maltepe.edu.tr/default.aspx" ],
+        "context": [ "" ]
+      },
+      {
+        "tag" : "directorOfComputer",
+        "patterns" :["who is the director of computer engineering department","director of computer engineering department"],
+        "responses" :["Assistant Professor Erdal GUVENOGLU"],
+        "context" :[ "" ]
+
+    },
+    {
+      "tag" : "directorOfSoftware",
+      "patterns" :["who is the director of software engineering department","director of software engineering department"],
+      "responses" :["Prof. Dr. Oruc Raif ONVURAL"],
+      "context" :[ "" ]
+
+  },
+    {
+        "tag":"curriculumOfComputer",
+        "patterns" :["what is the curriculum of computer engineering derpartment", "curriculum of computer engineering"],
+        "responses" :["Curriculum : https://www.maltepe.edu.tr/mf/tr/ogretim-programi-bmen"],
+        "context" :[ "" ]
+    },
+    {
+      "tag":"curriculumOfSoftware",
+      "patterns" :["what is the curriculum of software engineering derpartment", "curriculum of software engineering"],
+      "responses" :["Curriculum : https://www.maltepe.edu.tr/mf/tr/ogretim-programi-ymen"],
+      "context" :[ "" ]
+  },
+  {
+    "tag":"electiveCoursesOfComputer",
+    "patterns" :["What are the elective courses of the computer engineering department?","elective courses of the computer engineering department"],
+    "responses" :["Elective Course Pool :https://www.maltepe.edu.tr/mf/tr/secmeli-ders-havuzu-bmen"],
+    "context" :[ "" ]
+},
+{
+  "tag":"electiveCoursesOfSoftware",
+  "patterns" :["What are the elective courses of the software engineering department?","elective courses of the software engineering department"],
+  "responses" :["Elective Course Pool :https://www.maltepe.edu.tr/mf/tr/secmeli-ders-havuzu-ymen"],
+  "context" :[ "" ]
+},
+{
+  "tag":"examScheduleOfComputer",
+  "patterns" :["What is the exam schedule of the computer engineering department?","exam schedule of the computer engineering department"],
+  "responses" :["Exam Schedule of Computer Engineering : https://www.maltepe.edu.tr/mf/tr/sinav-takvimi-bmen"],
+  "context" :[ "" ]
+},
+{
+  "tag":"examScheduleOfSoftware",
+  "patterns" :["What is the exam schedule of the software engineering department?","exam schedule of the software engineering department"],
+  "responses" :["Exam Schedule of Software Engineering : https://www.maltepe.edu.tr/mf/tr/sinav-takvimi-ymen"],
+  "context" :[ "" ]
+},
+{
+  "tag":"announcementsOfComputer",
+  "patterns" :["What are the announcements of the computer engineering department?","announcements of the computer engineering department?","How can I find out the announcements of the computer engineering department?","how can i view announcements of the computer engineering department?"],
+  "responses" :["Announcements of Computer Engineering : https://www.maltepe.edu.tr/mf/tr/duyurular-148"],
+  "context" :[ "" ]
+},
+{
+  "tag":"announcementsOfSoftware",
+  "patterns" :["What are the announcements of the software engineering department?","announcements of the software engineering department?","How can I find out the announcements of the software engineering department?","how can i view announcements of the software engineering department?"],
+  "responses" :["Announcements of Software Engineering : https://www.maltepe.edu.tr/mf/tr/duyurular-200"],
+  "context" :[ "" ]
+},
+{
+  "tag":"internshipManagerOfComputer",
+  "patterns" :["Who is the internship manager of computer engineering department","internship manager of computer engineering department"],
+  "responses" :["Internship Manager of Computer Engineering : Assistant Professor M.Burak ALVER"],
+  "context" :[ "" ]
+},
+{
+  "tag":"internshipManagerOfSoftware",
+  "patterns" :["Who is the internship manager of software engineering department","internship manager of software engineering department"],
+  "responses" :["Internship Manager of Software Engineering : Assistant Professor Emre ATLIER OLCA"],
+  "context" :[ "" ]
+},
+{
+  "tag":"computerEngineering_Internship",
+  "patterns" :["Can I get information about computer engineering internship?","computer engineering internship"],
+  "responses" :["Computer Engineering Internship: https://www.maltepe.edu.tr/mf/tr/staj-bilgileri-bmen"],
+  "context" :[ "" ]
+},
+{
+  "tag":"softwareEngineering_Internship",
+  "patterns" :["Can I get information about software engineering internship?","software engineering internship"],
+  "responses" :["Software Engineering Internship: https://www.maltepe.edu.tr/mf/tr/staj-ymen"],
+  "context" :[ "" ]
+},
+{
+  "tag": "ayse_salman_office",
+  "patterns": [ "Ayþe salman office number", "what is the office of Ayþe Salman", "What is the room number of Ayþe Salman","Ayse salman office number", "what is the office of Ayse Salman", "What is the room number of Ayse Salman" ],
+  "responses": [ "Faculty of Engineering and Natural Sciences Building Room No: 103" ],
+  "context": [ "" ]
+},
+    {
+      "tag": "ayse_salman_mail",
+      "patterns": [ "Ayþe Salman mail address","Ayþe Salman email address","Ayþe salman e-mail address", "what is the email of Ayþe Salman","How can I contact Ayþe Salman","Ayse Salman mail address","Ayse Salman email address","Ayse salman e-mail address", "what is the email of Ayse Salman","How can I contact Ayse Salman"],
+      "responses": [ " aysesalman@maltepe.edu.tr " ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "huseyin_aygun_office",
+      "patterns": [ "Hüseyin Aygün office number", "what is the office of Hüseyin Aygün", "What is the room number of Hüseyin Aygün","Huseyin Aygün office number", "what is the office of Huseyin Aygün", "What is the room number of Huseyin Aygün" ],
+      "responses": [ "Faculty of Engineering and Natural Sciences Building Room No: 206" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "huseyin_aygun_mail",
+      "patterns": [ "Hüseyin Aygün mail address","Hüseyin Aygün email address","Hüseyin Aygün e-mail address", "what is the email of Hüseyin Aygün","How can I contact Hüseyin Aygün","Huseyin Aygun mail address","Huseyin Aygun email address","Huseyin Aygun e-mail address", "what is the email of Huseyin Aygun","How can I contact Huseyin Aygun"],
+      "responses": [" huseyinaygun@maltepe.edu.tr "],
+      "context": [ "" ]
+    },
+    {
+      "tag":"huseyin_aygun_officehour",
+      "patterns" :["Huseyin Aygun office hour", "what is the meeting hour of Huseyin Aygun?", "What is the available time of Huseyin Aygun for meeting?"],
+      "responses" :["You can meet with Huseyin Aygun at Monday 10:00-12:00, Tuesday 14:00-16:00, Wednesday 14:00-16:00, Thursday 13:30-15:30, Friday 10:00-12:00"],
+      "context" :[]
+  },
+    {
+      "tag": "emre_atlýer_olca_office",
+      "patterns": [ "Emre Atlýer Olca office number","Emre Atlýer Olca's office", "what is the office of Emre Atlýer Olca", "What is the room number of Emre Atlýer Olca","Emre Atlier Olca office number","Emre Atlier Olca's office", "what is the office of Emre Atlier Olca", "What is the room number of Emre Atlier Olca" ],
+      "responses": [ "Faculty of Engineering and Natural Sciences Building Room No:205" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "emre_atlýer_olca_mail",
+      "patterns": [ "Emre Atlýer Olca mail address","Emre Atlýer Olca email address","Emre Atlýer Olca e-mail address", "what is the email of Emre Atlýer Olca","How can I contact Emre Atlýer Olca","Emre Atlier Olca mail address","Emre Atlier Olca email address","Emre Atlier Olca e-mail address", "what is the email of Emre Atlier Olca","How can I contact Emre Atlier Olca"],
+      "responses": [" emreolca@maltepe.edu.tr "],
+      "context": [ "" ]
+    }, 
+    {
+      "tag":"emre_atlýer_olca_officehour",
+      "patterns" :["Emre Atlier Olca office hour", "what is the meeting hour of Emre Atlier Olca?", "What is the available time of Emre Atlier Olca for meeting?"],
+      "responses" :["You can meet with Emre Atlier Olca at Wednesday 10:00-11:00,13:00-15:00, Thursday 10:00-11:00,13:00-15:00"],
+      "context" :[]
+  }
+    
+    
+  
+  ]
+}
